@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Lab.js Experiment</title>
+  <script src="https://cdn.labjs.org/labjs/v27/lab.min.js"></script>
+</head>
+<body>
+  <div id="labjs-root"></div>
+  <script>
+    fetch('simple_task.json')
+      .then(response => response.json())
+      .then(experimentJSON => {
+        const experiment = new lab.util.fromObject(experimentJSON);
+        experiment.run();
+      })
+      .catch(err => {
+        document.body.innerHTML = '<p>Failed to load experiment JSON.</p>';
+        console.error(err);
+      });
+  </script>
+</body>
+</html>
