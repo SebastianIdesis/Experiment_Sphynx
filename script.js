@@ -56,6 +56,40 @@ const study = lab.util.fromObject({
       "parameters": {},
       "messageHandlers": {},
       "title": "introScreen"
+    },
+    {
+      "type": "lab.canvas.Screen",
+      "content": [
+        {
+          "type": "i-text",
+          "left": 0,
+          "top": 0,
+          "angle": 0,
+          "width": 277.5,
+          "height": 36.16,
+          "stroke": null,
+          "strokeWidth": 1,
+          "fill": "black",
+          "text": "Finished, thank you",
+          "fontStyle": "normal",
+          "fontWeight": "normal",
+          "fontSize": 32,
+          "fontFamily": "sans-serif",
+          "lineHeight": 1.16,
+          "textAlign": "center"
+        }
+      ],
+      "viewport": [
+        800,
+        600
+      ],
+      "files": {},
+      "responses": {
+        "keypress": ""
+      },
+      "parameters": {},
+      "messageHandlers": {},
+      "title": "Finish"
     }
   ]
 })
